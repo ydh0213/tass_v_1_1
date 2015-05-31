@@ -15,6 +15,7 @@
 #include <dlog.h>
 #include "tass.h"
 #include "customer_ticket.h"
+#include "customer_inquire_seat.h"
 
 void create_customer_view(appdata_s *ad);
 

@@ -107,23 +107,24 @@ void create_login_view(appdata_s *ad){
 	elm_bg_color_set(bg, 38, 116, 212);
 	evas_object_show(bg);
 
-	label = elm_label_add(grid);
-	elm_object_text_set(label,"TASS");
-	evas_object_size_hint_weight_set(label, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-	evas_object_show(label);
-	elm_grid_pack(grid, label, 25, 15, 50, 10);
+	bg = elm_bg_add(grid);
+	elm_bg_color_set(bg, 38, 116, 212);
+	elm_bg_file_set(bg,ICON_DIR"/train_icon0.png",NULL);
+	elm_bg_option_set(bg,ELM_BG_OPTION_STRETCH);
+	evas_object_show(bg);
+	elm_grid_pack(grid, bg, 25, 10, 50, 30);
 
 	label = elm_label_add(grid);
 	elm_object_text_set(label,"ID : ");
 	evas_object_size_hint_weight_set(label, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	evas_object_show(label);
-	elm_grid_pack(grid, label, 20, 35, 15, 10);
+	elm_grid_pack(grid, label, 20, 50, 15, 10);
 
 	label = elm_label_add(grid);
 	elm_object_text_set(label,"PW :");
 	evas_object_size_hint_weight_set(label, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	evas_object_show(label);
-	elm_grid_pack(grid, label, 20, 45, 15, 10);
+	elm_grid_pack(grid, label, 20, 60, 15, 10);
 
 	entry = elm_entry_add(grid);
 	elm_entry_editable_set(entry, EINA_TRUE);
@@ -131,7 +132,7 @@ void create_login_view(appdata_s *ad){
 	evas_object_show(entry);
 	elm_entry_single_line_set(entry, EINA_TRUE);
 	elm_entry_markup_filter_append(entry, elm_entry_filter_limit_size, &limit_size);
-	elm_grid_pack(grid, entry, 40, 33, 50, 10);
+	elm_grid_pack(grid, entry, 40, 48, 50, 10);
 	evas_object_smart_callback_add(entry, "focused", NULL, entry);
 
 	entry = elm_entry_add(grid);
@@ -140,7 +141,7 @@ void create_login_view(appdata_s *ad){
 	evas_object_show(entry);
 	elm_entry_single_line_set(entry, EINA_TRUE);
 	elm_entry_markup_filter_append(entry, elm_entry_filter_limit_size, &limit_size);
-	elm_grid_pack(grid, entry, 40, 43, 50, 10);
+	elm_grid_pack(grid, entry, 40, 58, 50, 10);
 	evas_object_smart_callback_add(entry, "focused", NULL, entry);
 
 	button = elm_button_add(grid);
@@ -149,7 +150,7 @@ void create_login_view(appdata_s *ad){
 	elm_object_text_set(button, "LOG IN");
 	evas_object_smart_callback_add(button, "clicked", clicked_login_btn_cb, ad);
 	evas_object_show(button);
-	elm_grid_pack(grid, button, 30, 60, 40, 10);
+	elm_grid_pack(grid, button, 30, 75, 40, 10);
 }
 
 static void

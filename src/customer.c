@@ -62,7 +62,20 @@ toolbar_select_cb(void *data, Evas_Object *obj, void *event_info)
 }
 
 static void
-toolbar_select_customer_ticket_cb(void *data, Evas_Object *obj, void *event_info)
+toolbar_customer_inquire_select_seat_cb(void *data, Evas_Object *obj, void *event_info)
+{
+	Evas_Object *nf = data;
+	Evas_Object *tab_view;
+	Elm_Object_Item *nf_it;
+
+	tab_view = add_customer_inquire_seat_view(nf);
+
+	nf_it = elm_naviframe_top_item_get(nf);
+	elm_object_item_part_content_set(nf_it, NULL, tab_view);
+}
+
+static void
+toolbar_customer_ticket_select_cb(void *data, Evas_Object *obj, void *event_info)
 {
 	Evas_Object *nf = data;
 	Evas_Object *tab_view;
@@ -88,10 +101,9 @@ create_customer_tabbar(Evas_Object *parent, const char *style)
 	elm_toolbar_shrink_mode_set(toolbar, ELM_TOOLBAR_SHRINK_EXPAND);
 	elm_toolbar_transverse_expanded_set(toolbar, EINA_TRUE);
 
-	elm_toolbar_item_append(toolbar, ICON_DIR"/00_controlbar_icon_artists.png", "좌석조회", toolbar_select_cb, parent);
-	elm_toolbar_item_append(toolbar, ICON_DIR"/00_controlbar_icon_artists.png", "전자표", toolbar_select_customer_ticket_cb, parent);
+	elm_toolbar_item_append(toolbar, ICON_DIR"/seat_icon0.png", "좌석조회", toolbar_customer_inquire_select_seat_cb, parent);
+	elm_toolbar_item_append(toolbar, ICON_DIR"/train_ticket0.png", "전자표", toolbar_customer_ticket_select_cb, parent);
 	elm_toolbar_item_append(toolbar, ICON_DIR"/00_controlbar_icon_artists.png", "서비스", toolbar_select_cb, parent);
-	elm_toolbar_item_append(toolbar, ICON_DIR"/00_controlbar_icon_artists.png", "", toolbar_select_cb, parent);
 	elm_toolbar_select_mode_set(toolbar, ELM_OBJECT_SELECT_MODE_ALWAYS);
 
 	return toolbar;

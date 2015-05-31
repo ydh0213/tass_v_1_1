@@ -4,7 +4,7 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="bin%2Ftass_v_1_1">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>6tNCNBDiaGyvs2J9zda21LWrmD/oRCSGEuTAcvkihK4=</DigestValue>
+<DigestValue>O6LVRmef3mSlrTN9SP327anPXiGhVhnz6mnD460LTDs=</DigestValue>
 </Reference>
 <Reference URI="res%2F00_controlbar_icon_artists.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -13,6 +13,18 @@
 <Reference URI="res%2F00_controlbar_icon_songs.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>lGAOt5Er/gS488VVNIuF2pbEWgZbjNL9kbUvzMaUVCM=</DigestValue>
+</Reference>
+<Reference URI="res%2Fseat_icon0.png">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>69PdpggvwN52kY9CtnWtNJPiquifO16WNmPSMGy0SEg=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftrain_icon0.png">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>rN1yuDQIjLyydmu6MLX2H190gF5gcOKDaKs1/Tg7h7c=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftrain_ticket0.png">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>zXA45Hr1pFLGsPnia5OaHBHeUwm74jChJgo+cvrcFFI=</DigestValue>
 </Reference>
 <Reference URI="shared%2Fres%2Ftass_v_1_1.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -31,11 +43,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-YWU7wAJ6TjPwXF2KkedddJ5XELZNYmg4KdX+OuUKchSakE/SeDIWDNDIV9e9QJrbARvgzvx2pppA
-hOe6gI1faTOHWEXVbRXUUaaAgCXuYhBPKxHI3LX0is8igtscJ/u3ZRwIuPisX0HQ6/M44h2OmOTp
-dxUJah1nhmAXri81Z5Q3erpdm5oCeHFXoy9C56tkIzOwacYM+Vhy0T70Qu7OJjfvH98Jm+J/RN1T
-k6GWxuijrIw6XkMORsxkSFxN1C+N8am/WEhLCY91NpHNFauCbSSY0E10qunbz94mskHFQih2PjjR
-1tNdaC4KSDop9rJz1cHJcHB7/LyftogkiHzATQ==
+BDzSBcV5Igm4v0CeqD+qiZVcmiEbVtB/aKY1RnkdHK9s7iDwaMDsVQDku+5uLBdRB6gUjRPaGfjx
+hXJjor/yWzKm9GlhJrj+uJHzyA7zk1EiPDnWv/nxFzkyIzSgN1wQE2Lg+18av6NhRZ5FfCmlJ85S
+W/IsL3O51X2XvI8MRrhPTz5jUrB7COfdi93H1l2fPZQs8hTgkx3yRcZO5tvmVa/VYUfs2DoBtXLe
+888wxlW9olhpOJ19HmLcHJAu6KpCOiG9F4IL/9KeFZ0IgACQ8aZNQ22HQ0/EfQDEt7VnNm+t9vLC
+HEJdP4fSo7j2Tm2/sigVE+vojCgKN7fwniidUA==
 </SignatureValue>
 <KeyInfo>
 <X509Data>

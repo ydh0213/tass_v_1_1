@@ -209,7 +209,8 @@ src/customer.d: ../src/customer.c \
   /Users/seongyong/tizen-sdk/tools/smart-build-interface/../../platforms/mobile-2.3/rootstraps/mobile-2.3-device.core/usr/include/efl-extension/efl_extension_events.h \
   /Users/seongyong/tizen-sdk/tools/smart-build-interface/../../platforms/mobile-2.3/rootstraps/mobile-2.3-device.core/usr/include/dlog/dlog.h \
   /Users/seongyong/workspace/tass_v_1_1/inc/tass.h \
-  /Users/seongyong/workspace/tass_v_1_1/inc/customer_ticket.h
+  /Users/seongyong/workspace/tass_v_1_1/inc/customer_ticket.h \
+  /Users/seongyong/workspace/tass_v_1_1/inc/customer_inquire_seat.h
 
 /Users/seongyong/workspace/tass_v_1_1/inc/customer.h:
 
@@ -632,3 +633,5 @@ src/customer.d: ../src/customer.c \
 /Users/seongyong/workspace/tass_v_1_1/inc/tass.h:
 
 /Users/seongyong/workspace/tass_v_1_1/inc/customer_ticket.h:
+
+/Users/seongyong/workspace/tass_v_1_1/inc/customer_inquire_seat.h:

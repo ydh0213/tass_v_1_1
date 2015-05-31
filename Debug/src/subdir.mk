@@ -5,16 +5,19 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../src/customer.c \
+../src/customer_inquire_seat.c \
 ../src/customer_ticket.c \
 ../src/tass.c 
 
 OBJS += \
 ./src/customer.o \
+./src/customer_inquire_seat.o \
 ./src/customer_ticket.o \
 ./src/tass.o 
 
 C_DEPS += \
 ./src/customer.d \
+./src/customer_inquire_seat.d \
 ./src/customer_ticket.d \
 ./src/tass.d 
 

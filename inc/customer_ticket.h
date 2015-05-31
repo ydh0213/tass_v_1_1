@@ -26,6 +26,6 @@ typedef struct customer {
 	char finish_time[20];
 } customer_s;
 
-Evas_Object* add_customer_ticket_view(Evas_Object *ad);
+Evas_Object* add_customer_ticket_view(Evas_Object *parent);
 
 #endif /* CUSTOMER_H_ */

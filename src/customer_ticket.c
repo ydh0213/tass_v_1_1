@@ -34,9 +34,8 @@ Evas_Object* add_customer_ticket_view(Evas_Object *parent){
 	bg = elm_bg_add(grid);
 	elm_win_resize_object_add(grid, bg);
 	elm_object_content_set(grid, bg);
-	elm_grid_pack(grid, bg, 1, 1, 98, 98);
+	elm_grid_pack(grid, bg, 0, 0, 100, 100);
 	elm_bg_color_set(bg, 38, 116, 212);
-	elm_bg_file_set(bg,ICON_DIR"/00_controlbar_icon_songs.png",NULL);
 	evas_object_show(bg);
 
 	label = elm_label_add(grid);
