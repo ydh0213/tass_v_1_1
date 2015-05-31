@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="2.3" package="org.tizen.tass_v_1_1" version="1.0.0">
+	<profile name="mobile" />
+	<ui-application appid="org.tizen.tass_v_1_1" exec="tass_v_1_1" type="capp" multiple="false" taskmanage="true" nodisplay="false">
+		<icon>tass_v_1_1.png</icon>
+		<label>tass_v_1_1</label>
+	</ui-application>
+	<privileges>
+		<privilege>http://tizen.org/privilege/systemsettings</privilege>
+	</privileges>
+</manifest>
